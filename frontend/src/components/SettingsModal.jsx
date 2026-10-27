@@ -110,6 +110,27 @@ export default function SettingsModal({ profile, onSaveProfile, apiKey, onSaveAp
             </div>
           </div>
 
+          <div className="form-group">
+            <label className="form-label">
+              <span>HEBAT Flagship Programs (Default Preset)</span>
+              <span className="label-hint">Kotak atas kanan EPA.002</span>
+            </label>
+            <div className="badge-grid badge-grid-2">
+              {[
+                { val: 'Tidak', label: 'Tidak (Bukan Flagship)' },
+                { val: 'Ya', label: 'Ya (HEBAT Flagship)' }
+              ].map((h) => (
+                <div
+                  key={h.val}
+                  className={`option-badge ${(formData.hebat_flagship || 'Tidak') === h.val ? 'active' : ''}`}
+                  onClick={() => setFormData((prev) => ({ ...prev, hebat_flagship: h.val }))}
+                >
+                  <ShieldCheck size={14} /> {h.label}
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="form-row">
             <div className="form-group">
               <label className="form-label">Nama Pemohon</label>

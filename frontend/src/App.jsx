@@ -385,9 +385,9 @@ export default function App() {
     addToast('Gemini API Key setting updated');
   };
 
-  // Canvas Click in Calibrate Mode
+  // Canvas Click in Calibrate Mode or Interactive Checkbox Toggle in Normal Mode
   const handlePaperClick = (e) => {
-    if (!isCalibrateMode || draggingField) return;
+    if (draggingField) return;
 
     const rect = paperRef.current.getBoundingClientRect();
     const clickX = e.clientX - rect.left;
@@ -397,7 +397,40 @@ export default function App() {
     const pdf_x = clickX / zoom;
     const pdf_y = (PDF_HEIGHT_PTS * zoom - clickY) / zoom;
 
-    setCalibrateClick({ x: pdf_x, y: pdf_y });
+    if (isCalibrateMode) {
+      setCalibrateClick({ x: pdf_x, y: pdf_y });
+      return;
+    }
+
+    const cb = coordinates?.checkboxes;
+    if (!cb) return;
+
+    const isInside = (r, pad = 8) => {
+      if (!r || r.length < 4) return false;
+      const xmin = Math.min(r[0], r[2]) - pad;
+      const xmax = Math.max(r[0], r[2]) + pad;
+      const ymin = Math.min(r[1], r[3]) - pad;
+      const ymax = Math.max(r[1], r[3]) + pad;
+      return pdf_x >= xmin && pdf_x <= xmax && pdf_y >= ymin && pdf_y <= ymax;
+    };
+
+    // HEBAT Flagship: Ya / Tidak
+    if (cb.hebat_ya && isInside(cb.hebat_ya.rect)) {
+      setFormData((prev) => ({
+        ...prev,
+        hebat_flagship: prev.hebat_flagship === 'Ya' ? 'Tidak' : 'Ya'
+      }));
+      addToast(formData.hebat_flagship === 'Ya' ? 'HEBAT Flagship: Ditukar ke Tidak' : 'HEBAT Flagship: Ditanda Ya');
+      return;
+    }
+    if (cb.hebat_tidak && isInside(cb.hebat_tidak.rect)) {
+      setFormData((prev) => ({
+        ...prev,
+        hebat_flagship: prev.hebat_flagship === 'Tidak' ? 'Ya' : 'Tidak'
+      }));
+      addToast(formData.hebat_flagship === 'Tidak' ? 'HEBAT Flagship: Ditanda Ya' : 'HEBAT Flagship: Ditukar ke Tidak');
+      return;
+    }
   };
 
   // Save Coordinate from Calibrate Modal
@@ -845,6 +878,33 @@ export default function App() {
                       </div>
                     </div>
                   )}
+
+                  <div className="form-group">
+                    <label className="form-label">
+                      <span>HEBAT Flagship Programs</span>
+                      <span className="label-hint">Kotak Atas Kanan Borang EPA.002</span>
+                    </label>
+                    <div className="badge-grid badge-grid-2">
+                      {[
+                        { val: 'Tidak', label: 'Tidak (Bukan Flagship)' },
+                        { val: 'Ya', label: 'Ya (HEBAT Flagship)' }
+                      ].map((h) => (
+                        <div
+                          key={h.val}
+                          className={`option-badge ${formData.hebat_flagship === h.val ? 'active' : ''}`}
+                          onClick={() =>
+                            setFormData((prev) => ({
+                              ...prev,
+                              hebat_flagship: prev.hebat_flagship === h.val ? '' : h.val
+                            }))
+                          }
+                          title={`Tanda kotak ${h.val} untuk HEBAT Flagship Programs`}
+                        >
+                          <CheckCircle2 size={14} /> {h.label}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
@@ -983,6 +1043,33 @@ export default function App() {
                         <option value="KJ">KJ - Kejuruteraan (Nibong Tebal)</option>
                         <option value="KK">KK - Kesihatan (Kubang Kerian)</option>
                       </select>
+                    </div>
+                  </div>
+
+                  <div className="form-group">
+                    <label className="form-label">
+                      <span>HEBAT Flagship Programs</span>
+                      <span className="label-hint">Pilih kotak untuk ditanda (Atas Kanan Borang)</span>
+                    </label>
+                    <div className="badge-grid badge-grid-2">
+                      {[
+                        { val: 'Tidak', label: 'Tidak (Bukan Flagship)' },
+                        { val: 'Ya', label: 'Ya (HEBAT Flagship)' }
+                      ].map((h) => (
+                        <div
+                          key={h.val}
+                          className={`option-badge ${formData.hebat_flagship === h.val ? 'active' : ''}`}
+                          onClick={() =>
+                            setFormData((prev) => ({
+                              ...prev,
+                              hebat_flagship: prev.hebat_flagship === h.val ? '' : h.val
+                            }))
+                          }
+                          title={`Tanda kotak ${h.val} untuk HEBAT Flagship Programs`}
+                        >
+                          <CheckCircle2 size={14} /> {h.label}
+                        </div>
+                      ))}
                     </div>
                   </div>
 
