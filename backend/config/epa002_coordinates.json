@@ -1,0 +1,705 @@
+{
+  "page_size": [
+    595.44,
+    841.68
+  ],
+  "text_fields": {
+    "nama_pertubuhan": {
+      "rect": [
+        151.02,
+        717.71,
+        332.0,
+        732.22
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Nama Pertubuhan"
+    },
+    "nama_pemohon": {
+      "rect": [
+        129.34,
+        644.14,
+        332.0,
+        658.66
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Nama Pemohon"
+    },
+    "no_kp": {
+      "rect": [
+        454.72,
+        644.3,
+        563.0,
+        658.82
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "No. Kad Pengenalan"
+    },
+    "jawatan_pemohon": {
+      "rect": [
+        130.52,
+        626.16,
+        332.0,
+        640.67
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Jawatan Pemohon"
+    },
+    "no_matrik": {
+      "rect": [
+        455.32,
+        626.02,
+        563.0,
+        640.53
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "No. Matrik"
+    },
+    "emel_pemohon": {
+      "rect": [
+        129.91,
+        608.5,
+        332.0,
+        623.02
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Emel Pemohon"
+    },
+    "no_telefon": {
+      "rect": [
+        449.17,
+        608.63,
+        563.0,
+        623.14
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "No. Telefon"
+    },
+    "tajuk_projek": {
+      "rect": [
+        128.17,
+        570.78,
+        563.0,
+        584.26
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Tajuk Projek"
+    },
+    "ringkasan_projek": {
+      "rect": [
+        129.32,
+        537,
+        563.0,
+        568
+      ],
+      "font_size": 8,
+      "align": "left",
+      "wrap_chars": 85,
+      "label": "Ringkasan Projek"
+    },
+    "cadangan_vip": {
+      "rect": [
+        128.17,
+        522.03,
+        332.0,
+        536.55
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Cadangan VIP (Jika Ada)"
+    },
+    "tarikh_projek": {
+      "rect": [
+        450.95,
+        522.03,
+        563.0,
+        536.55
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Tarikh Projek"
+    },
+    "masa_projek": {
+      "rect": [
+        462.38,
+        504.68,
+        563.0,
+        519.19
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Masa"
+    },
+    "lokasi_projek": {
+      "rect": [
+        462.85,
+        486.71,
+        563.0,
+        501.23
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Lokasi Projek"
+    },
+    "nama_pegawai_pengiring": {
+      "rect": [
+        462.85,
+        468.71,
+        563.0,
+        483.23
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Nama Pegawai Pengiring"
+    },
+    "jawatan_pegawai_pengiring": {
+      "rect": [
+        462.85,
+        450.71,
+        563.0,
+        465.23
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Jawatan Pegawai Pengiring"
+    },
+    "ptj_pegawai_pengiring": {
+      "rect": [
+        462.85,
+        432.71,
+        563.0,
+        447.23
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "PTJ Pegawai Pengiring"
+    },
+    "kutipan_rm": {
+      "rect": [
+        152,
+        434.09,
+        232,
+        445.09
+      ],
+      "font_size": 8.5,
+      "align": "left",
+      "label": "Jumlah Kutipan RM"
+    },
+    "tujuan_kutipan": {
+      "rect": [
+        128.17,
+        411.6,
+        332.0,
+        426.11
+      ],
+      "font_size": 8.5,
+      "align": "left",
+      "label": "Tujuan Kutipan"
+    },
+    "sasaran_peserta": {
+      "rect": [
+        495.55,
+        412.78,
+        563.0,
+        427.29
+      ],
+      "font_size": 9,
+      "align": "left",
+      "label": "Bilangan Sasaran Peserta"
+    },
+    "tarikh_disediakan": {
+      "rect": [
+        444.82,
+        279.79,
+        550.0,
+        294.3
+      ],
+      "font_size": 8.5,
+      "align": "left",
+      "label": "Tarikh Disediakan"
+    },
+    "nama_disemak": {
+      "rect": [
+        443.93,
+        188.91,
+        560.0,
+        203.42
+      ],
+      "font_size": 8.5,
+      "align": "left",
+      "label": "Nama Disemak"
+    },
+    "tarikh_disemak": {
+      "rect": [
+        443.85,
+        179.14,
+        550.0,
+        193.65
+      ],
+      "font_size": 8.5,
+      "align": "left",
+      "label": "Tarikh Disemak"
+    }
+  },
+  "checkboxes": {
+    "hebat_ya": {
+      "rect": [
+        446,
+        703.16,
+        466,
+        714.15
+      ],
+      "label": "HEBAT Flagship: Ya"
+    },
+    "hebat_tidak": {
+      "rect": [
+        483.5,
+        703.16,
+        503.5,
+        714.15
+      ],
+      "label": "HEBAT Flagship: Tidak"
+    },
+    "kategori_majlis": {
+      "rect": [
+        126.95,
+        703.16,
+        146.95,
+        714.15
+      ],
+      "label": "Kategori: Majlis"
+    },
+    "kategori_desasiswa": {
+      "rect": [
+        170,
+        703.16,
+        190,
+        714.15
+      ],
+      "label": "Kategori: Desasiswa"
+    },
+    "kategori_kelab": {
+      "rect": [
+        228,
+        703.16,
+        248,
+        714.15
+      ],
+      "label": "Kategori: Kelab"
+    },
+    "kategori_anak_negeri": {
+      "rect": [
+        270,
+        703.16,
+        290,
+        714.15
+      ],
+      "label": "Kategori: Anak Negeri"
+    },
+    "kategori_persatuan": {
+      "rect": [
+        126.95,
+        684.72,
+        146.95,
+        695.72
+      ],
+      "label": "Kategori: Persatuan"
+    },
+    "kategori_badan_beruniform": {
+      "rect": [
+        182,
+        684.72,
+        202,
+        695.72
+      ],
+      "label": "Kategori: Badan Beruniform"
+    },
+    "kategori_sekretariat": {
+      "rect": [
+        270,
+        684.72,
+        290,
+        695.72
+      ],
+      "label": "Kategori: Sekretariat"
+    },
+    "kampus_ki": {
+      "rect": [
+        446.03,
+        685.87,
+        466.03,
+        696.87
+      ],
+      "label": "Kampus: KI (Induk)"
+    },
+    "kampus_kj": {
+      "rect": [
+        484,
+        685.87,
+        504,
+        696.87
+      ],
+      "label": "Kampus: KJ (Kejuruteraan)"
+    },
+    "kampus_kk": {
+      "rect": [
+        521,
+        685.87,
+        541,
+        696.87
+      ],
+      "label": "Kampus: KK (Kesihatan)"
+    },
+    "kaedah_fizikal": {
+      "rect": [
+        126.94,
+        508.25,
+        146.94,
+        519.25
+      ],
+      "label": "Kaedah: Fizikal"
+    },
+    "kaedah_hibrid": {
+      "rect": [
+        199,
+        508.25,
+        219,
+        519.25
+      ],
+      "label": "Kaedah: Hibrid"
+    },
+    "kaedah_talian": {
+      "rect": [
+        269,
+        508.25,
+        289,
+        519.25
+      ],
+      "label": "Kaedah: Atas Talian"
+    },
+    "penganjuran_dalam": {
+      "rect": [
+        127.08,
+        489.32,
+        147.08,
+        500.32
+      ],
+      "label": "Penganjuran: Dalam Kampus"
+    },
+    "penganjuran_luar": {
+      "rect": [
+        127.08,
+        461.5,
+        147.08,
+        472.5
+      ],
+      "label": "Penganjuran: Luar Kampus"
+    },
+    "kutipan_ya": {
+      "rect": [
+        127.08,
+        434.09,
+        147.08,
+        445.09
+      ],
+      "label": "Kutipan Wang: Ya"
+    },
+    "kutipan_tidak": {
+      "rect": [
+        263.91,
+        434.09,
+        283.9,
+        445.09
+      ],
+      "label": "Kutipan Wang: Tidak"
+    },
+    "peringkat_a": {
+      "rect": [
+        41.45,
+        336.6,
+        61.45,
+        347.6
+      ],
+      "label": "Peringkat: A (Antarabangsa)"
+    },
+    "peringkat_b": {
+      "rect": [
+        41.45,
+        318.1,
+        61.45,
+        329.1
+      ],
+      "label": "Peringkat: B (Antara Universiti/ Kebangsaan)"
+    },
+    "peringkat_c": {
+      "rect": [
+        41.45,
+        299.6,
+        61.45,
+        310.6
+      ],
+      "label": "Peringkat: C (Universiti/ Negeri)"
+    },
+    "peringkat_d": {
+      "rect": [
+        41.45,
+        281.36,
+        61.45,
+        292.35
+      ],
+      "label": "Peringkat: D (Pertubuhan /Pusat Pengajian)"
+    },
+    "mycsd_01": {
+      "rect": [
+        199.5,
+        336.6,
+        219.5,
+        347.6
+      ],
+      "label": "MyCSD: 01 Reka Cipta & Inovasi"
+    },
+    "mycsd_02": {
+      "rect": [
+        199.5,
+        318.1,
+        219.5,
+        329.1
+      ],
+      "label": "MyCSD: 02 Khidmat Masyarakat"
+    },
+    "mycsd_03": {
+      "rect": [
+        199.5,
+        299.6,
+        219.5,
+        310.6
+      ],
+      "label": "MyCSD: 03 Pengucapan Awam"
+    },
+    "mycsd_04": {
+      "rect": [
+        199.5,
+        281.1,
+        219.5,
+        292.1
+      ],
+      "label": "MyCSD: 04 Kesukarelawanan"
+    },
+    "mycsd_05": {
+      "rect": [
+        318.3,
+        336.6,
+        338.3,
+        347.6
+      ],
+      "label": "MyCSD: 05 Keusahawanan"
+    },
+    "mycsd_06": {
+      "rect": [
+        318.3,
+        318.1,
+        338.3,
+        329.1
+      ],
+      "label": "MyCSD: 06 Kepimpinan"
+    },
+    "mycsd_07": {
+      "rect": [
+        318.3,
+        299.6,
+        338.3,
+        310.6
+      ],
+      "label": "MyCSD: 07 Kebudayaan"
+    },
+    "mycsd_08": {
+      "rect": [
+        318.3,
+        281.1,
+        338.3,
+        292.1
+      ],
+      "label": "MyCSD: 08 Sukan"
+    },
+    "sdg_01": {
+      "rect": [
+        138,
+        261.1,
+        158,
+        272.09
+      ],
+      "label": "SDG 01 No Poverty"
+    },
+    "sdg_02": {
+      "rect": [
+        158,
+        261.1,
+        178,
+        272.09
+      ],
+      "label": "SDG 02 Zero Hunger"
+    },
+    "sdg_03": {
+      "rect": [
+        178,
+        261.1,
+        198,
+        272.09
+      ],
+      "label": "SDG 03 Good Health & Well-being"
+    },
+    "sdg_04": {
+      "rect": [
+        198,
+        261.1,
+        218,
+        272.09
+      ],
+      "label": "SDG 04 Quality Education"
+    },
+    "sdg_05": {
+      "rect": [
+        218,
+        261.1,
+        238,
+        272.09
+      ],
+      "label": "SDG 05 Gender Equality"
+    },
+    "sdg_06": {
+      "rect": [
+        238,
+        261.1,
+        258,
+        272.09
+      ],
+      "label": "SDG 06 Clean Water and Sanitation"
+    },
+    "sdg_07": {
+      "rect": [
+        138,
+        227.8,
+        158,
+        238.8
+      ],
+      "label": "SDG 07 Affordable & Clean Energy"
+    },
+    "sdg_08": {
+      "rect": [
+        158,
+        227.8,
+        178,
+        238.8
+      ],
+      "label": "SDG 08 Decent Work & Economic Growth"
+    },
+    "sdg_09": {
+      "rect": [
+        178,
+        227.8,
+        198,
+        238.8
+      ],
+      "label": "SDG 09 Industry, Innovation & Infrastructure"
+    },
+    "sdg_10": {
+      "rect": [
+        198,
+        227.8,
+        218,
+        238.8
+      ],
+      "label": "SDG 10 Reduced Inequalities"
+    },
+    "sdg_11": {
+      "rect": [
+        218,
+        227.8,
+        238,
+        238.8
+      ],
+      "label": "SDG 11 Sustainable Cities & Communities"
+    },
+    "sdg_12": {
+      "rect": [
+        238,
+        227.8,
+        258,
+        238.8
+      ],
+      "label": "SDG 12 Responsible Consumption & Production"
+    },
+    "sdg_13": {
+      "rect": [
+        138,
+        194.5,
+        158,
+        205.5
+      ],
+      "label": "SDG 13 Climate Action"
+    },
+    "sdg_14": {
+      "rect": [
+        158,
+        194.5,
+        178,
+        205.5
+      ],
+      "label": "SDG 14 Life Below Water"
+    },
+    "sdg_15": {
+      "rect": [
+        178,
+        194.5,
+        198,
+        205.5
+      ],
+      "label": "SDG 15 Life on Land"
+    },
+    "sdg_16": {
+      "rect": [
+        198,
+        194.5,
+        218,
+        205.5
+      ],
+      "label": "SDG 16 Peace, Justice & Strong Institutions"
+    },
+    "sdg_17": {
+      "rect": [
+        218,
+        194.5,
+        238,
+        205.5
+      ],
+      "label": "SDG 17 Partnerships for the Goals"
+    }
+  },
+  "widgets": {
+    "signature_pemohon": {
+      "rect": [
+        445.42,
+        307.04,
+        535.13,
+        339.87
+      ],
+      "label": "Tandatangan Pemohon"
+    },
+    "signature_disemak": {
+      "rect": [
+        445.42,
+        210,
+        535.13,
+        242.83
+      ],
+      "label": "Tandatangan YDP / SU Pertubuhan"
+    }
+  }
+}
